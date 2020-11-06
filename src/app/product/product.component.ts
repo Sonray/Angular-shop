@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { GetAPIService } from '../services/get-api.service'
+import { Productcomponents } from '../classes/productcomponents'
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor( private _GetAPIService: GetAPIService){}
 
-  ngOnInit(): void {
+  productlist: Productcomponents[];
+
+  ngOnInit(){
+    // this._GetAPIService.getProductbyID(id).subscribe(
+    //   data=>{
+    //       this.productlist=data;
+    //   }
+    // );
   }
 
 }

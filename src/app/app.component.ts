@@ -15,10 +15,13 @@ export class AppComponent {
 
   productlist: Productcomponents[];
 
+  
+  
   ngOnInit(){
     this._GetAPIService.getProduct().subscribe(
       data=>{
           this.productlist=data;
+          
       }
     );
   }
