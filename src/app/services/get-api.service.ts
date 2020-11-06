@@ -10,7 +10,7 @@ export class GetAPIService {
   constructor(private http : HttpClient) { }
 
   getProduct():Observable<any>{
-      return this.http.get("/api/products/all/")
+      return this.http.get("https://hood9000.herokuapp.com/api/products/all/")
   }
 
   // getProductbyID(id):Observable<any>{
