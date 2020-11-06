@@ -1,16 +1,17 @@
 <p>product works!</p>
 
-<h2>Get Request (https://hood9000.herokuapp.com/api/products/)</h2>
-
-<div *ngFor = "let prod of productlist">
-  <div>
-    
-    <img src="{{prod.product_pic}}" alt="product photo"><br>
-    
-    {{prod.product_name}}
-
-    {{prod.description}}
-
-    {{prod.product_category}}
+<div class="container">
+  <h2>Get Request (https://hood9000.herokuapp.com/api/products/all/)</h2>
+  <div *ngFor = "let prod of productlist">
+    <div>      
+      <img src="{{prod.product_pic}}" alt="product photo"><br>
+      {{prod.product_name}}<br>
+      {{prod.description}}<br>
+      {{prod.product_category}}<br>
+      
+      <button type="submit" class="btn btn-success">VIEW PRODUCT</button>
+    </div><br><br>
+  </div><br>
+</div>
 
 <router-outlet></router-outlet>
