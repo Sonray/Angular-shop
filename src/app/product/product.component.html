@@ -2,17 +2,17 @@
 
 <h2>Get Request (https://hood9000.herokuapp.com/api/products/)</h2>
 <div *ngFor = "let prod of productlist">
-<div>
-  <li>{{prod.id}}</li>
-  
-  <li><img src="{{prod.product_pic}}" alt=""></li>
-  
-  <li>{{prod.product_name}}</li>
+  <div>
+    <li>{{prod.id}}</li>
+    
+    <li><img src="{{prod.product_pic}}" alt=""></li>
+    
+    <li>{{prod.product_name}}</li>
 
-  <li>{{prod.description}}</li>
+    <li>{{prod.description}}</li>
 
-  <li>{{prod.product_category}}</li>
+    <li>{{prod.product_category}}</li>
 
-</div>
+  </div>
 </div>
 <router-outlet></router-outlet>
