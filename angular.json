@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TheShop"
+    }
+  },
+  "defaultProject": "TheShop",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -6,10 +6,10 @@ import { HttpClient } from '@angular/common/http'
   providedIn: 'root'
 })
 export class GetAPIService {
-
-  constructor(private httpclient : HttpClient) { }
+  
+  constructor(private http : HttpClient) { }
 
   getProduct():Observable<any>{
-      return this.httpclient.get("https://hood9000.herokuapp.com/api/products/all/")
+      return this.http.get("/api/products/all/")
   }
 }
