@@ -4,4 +4,5 @@ export class Productcomponents {
     product_name : string;
     description : string;
     product_category : string;
+    
 }
